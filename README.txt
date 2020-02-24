@@ -13,5 +13,15 @@ src/Makefile - contains a target "build" which should build any
 
 Example:
 
-   zsh src/add-arguments.zsh 1 -2 3
-   # Writes "6" to standard output.
+    zsh src/add-arguments.zsh 1 -2 3
+    # Writes "6" to standard output.
+
+Report on your progress
+----------------------
+
+When you are done, replace this section with any notes or other considerations
+that you think need to be taken into account when your work is evaluated.
+
+Also mention any particular difficulties you had.
+
+But keep it brief!
