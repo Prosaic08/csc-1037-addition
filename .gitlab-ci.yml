@@ -2,5 +2,5 @@ image: "smblott/dcu-docker-gitlab-ci"
 
 test:
   script:
-    - "make -C src build"
+    - "make build"
     - "make test"

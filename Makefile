@@ -7,8 +7,11 @@
 
 grep = grep -q -w -x
 
-test:
+build:
 	$(MAKE) -C src build
+
+test:
+	$(MAKE) build
 	#
 	# Test ZSH implementation.
 	zsh src/add-arguments.zsh | wc -l | $(grep) 1
