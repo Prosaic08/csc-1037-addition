@@ -20,13 +20,6 @@ test -f $file && python $file $(seq 10) | grep -q -x -w 55 && ((correct += 1))
 
 file=src/add-c
 
-# This is just for me to be able to test this script.
-# Tweak it to your own needs, if necessary.
-if [[ $USER == blott ]] && test -f $file
-then
-   rm $file
-fi
-
 # The C executable should not be in the repo!
 test -f $file && ((correct -= 2))
 
@@ -43,15 +36,8 @@ test -f $file && rm $file
 file=Add
 cd src
 
-# This is just for me to be able to test this script.
-# Tweak it to your own needs, if necessary.
-if [[ $USER == blott ]] && test -f $file.class
-then
-   rm $file.class
-fi
-
 # The Java class file should not be in the repo!
-test -f $file && ((correct -= 2))
+test -f $file.class && ((correct -= 2))
 
 # Try to build the Java class file.
 test -f $file.java && make Add.class && test -f $file.class && ((correct += 1))
