@@ -4,6 +4,11 @@
 # We just run each implementation in various ways and grep for the expected result.
 #
 # Make will fail if any of the greps below fail.
+#
+# For additional languages, simply append tests as needed below.
+#
+# You should know that, for all of the indented lines below, the indetation is
+# EXACTLY ONE TAB CHARACTER.  Yes.  It's weird.  But that's how it is.
 
 grep = grep -q -w -x
 
