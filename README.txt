@@ -1,5 +1,5 @@
-Week 4 repo for CA282
----------------------
+CA282 Addition repo
+-------------------
 
 src/         - various implementations of a program to add together
                their command-line arguments.
@@ -7,7 +7,7 @@ src/         - various implementations of a program to add together
 src/Makefile - contains a target "build" which should build any
                executables (for languages like C or Java).
 
-./Makefile   - contains a target "test" which "tests" the various
+Makefile     - contains a target "test" which "tests" the various
                implementations.  Poor man's tests, but you should
 	       be able to work out what's going on.
 
