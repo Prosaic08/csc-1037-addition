@@ -15,8 +15,9 @@ test -f $file && python3 $file $(seq 10) | grep -q -x -w 55 && ((correct += 1))
 file=src/add-python2.py
 
 # Test the Python2 script.
-test -f $file && python $file | grep -q -x -w 0 && ((correct += 1))
-test -f $file && python $file $(seq 10) | grep -q -x -w 55 && ((correct += 1))
+python2="python2.7"
+test -f $file && $python2 $file | grep -q -x -w 0 && ((correct += 1))
+test -f $file && $python2 $file $(seq 10) | grep -q -x -w 55 && ((correct += 1))
 
 file=src/add-c
 
