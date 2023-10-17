@@ -14,4 +14,5 @@ src/Makefile - contains a target "build" which should build any
 Example:
 
    zsh src/add-arguments.zsh 1 2 3
+   
    **Writes "6" to standard output.**
