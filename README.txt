@@ -13,7 +13,7 @@ Makefile     - contains a target "test" which "tests" the various
 
 Example:
 
-    zsh src/add-arguments.zsh 1 -2 3
+    zsh src/add-arguments.zsh 1 2 3
     # Writes "6" to standard output.
 
 Report on your progress
