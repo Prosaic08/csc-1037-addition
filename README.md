@@ -15,4 +15,4 @@ Example:
 
    zsh src/add-arguments.zsh 1 2 3
    
-   **Writes "6" to standard output.**
+  ** Writes "6" to standard output.**
