@@ -1,5 +1,4 @@
-Week 4 repo for CA282
----------------------
+
 
 src/         - various implementations of a program to add together
                their command-line arguments.
