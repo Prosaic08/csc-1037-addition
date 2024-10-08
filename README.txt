@@ -1,4 +1,4 @@
-CA282 Addition repo
+CSC1037 Addition repo
 -------------------
 
 src/         - various implementations of a program to add together
