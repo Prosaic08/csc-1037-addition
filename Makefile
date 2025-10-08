@@ -41,3 +41,10 @@ test:
 	python2 src/add-python2.py 1 2 3 | $(grep) 6
 	python2 src/add-python2.py 1 -2 3 | $(grep) 2
 
+	# Test JavaScript implementation.
+	node src/add-javascript.js | wc -l | $(grep) 1
+	node src/add-javascript.js | $(grep) 0
+	node src/add-javascript.js 1 2 3 | wc -l | $(grep) 1
+	node src/add-javascript.js 1 2 3 | $(grep) 6
+	node src/add-javascript.js 1 -2 3 | wc -l | $(grep) 1
+	node src/add-javascript.js 1 -2 3 | $(grep) 2
