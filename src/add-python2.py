@@ -6,6 +6,6 @@ import sys
 
 total = 0
 for v in sys.argv[1:]:
-   total = total + v
+   total = total + int(v)
 
 print total
