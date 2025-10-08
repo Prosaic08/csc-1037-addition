@@ -25,6 +25,7 @@ test:
 	zsh src/add-arguments.zsh 1 2 3 | $(grep) 6
 	zsh src/add-arguments.zsh 1 -2 3 | wc -l | $(grep) 1
 	zsh src/add-arguments.zsh 1 -2 3 | $(grep) 2
+
 	#
 	# Test Python3 implementation.
 	python3 src/add-python3.py | wc -l | $(grep) 1
@@ -33,3 +34,10 @@ test:
 	python3 src/add-python3.py 1 2 3 | $(grep) 6
 	python3 src/add-python3.py 1 -2 3 | wc -l | $(grep) 1
 	python3 src/add-python3.py 1 -2 3 | $(grep) 2
+
+
+
+	python2 src/add-python2.py 1 2 3 | $(grep) 6
+	python2 src/add-python2.py 1 2 3 | $(grep) 6
+	python2 src/add-python2.py 1 -2 3 | $(grep) 2
+
