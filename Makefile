@@ -48,3 +48,10 @@ test:
 	node src/add-javascript.js 1 2 3 | $(grep) 6
 	node src/add-javascript.js 1 -2 3 | wc -l | $(grep) 1
 	node src/add-javascript.js 1 -2 3 | $(grep) 2
+	# Test Java implementation.
+	java -cp src Add | wc -l | $(grep) 1
+	java -cp src Add | $(grep) 0
+	java -cp src Add 1 2 3 | wc -l | $(grep) 1
+	java -cp src Add 1 2 3 | $(grep) 6
+	java -cp src Add 1 -2 3 | wc -l | $(grep) 1
+	java -cp src Add 1 -2 3 | $(grep) 2
