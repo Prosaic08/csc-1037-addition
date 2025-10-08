@@ -25,3 +25,11 @@ that you think need to be taken into account when your work is evaluated.
 Also mention any particular difficulties you had.
 
 But keep it brief!
+
+
+--COMMENTS--
+Note: There are only three test cases in python2 Makefile, however the program still works.
+
+I found making the tests hard because I haven't learned how to test programs in makefile in this course yet.
+
+Everything else was nicely guided.
